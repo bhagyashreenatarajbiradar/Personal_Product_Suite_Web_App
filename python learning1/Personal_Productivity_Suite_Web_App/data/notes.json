@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Python",
+        "content": "Learn Flask",
+        "date": "2026-07-08 17:29:12"
+    },
+    {
+        "id": 2,
+        "title": "Java",
+        "content": "OOP",
+        "date": "2026-07-08 17:29:51"
+    },
+    {
+        "id": 3,
+        "title": "HTML",
+        "content": "CSS",
+        "date": "2026-07-08 17:30:18"
+    }
+]

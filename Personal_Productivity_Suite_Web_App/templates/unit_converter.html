@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>
+Unit Converter
+</title>
+
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+
+<body>
+
+
+<h1>
+UNIT CONVERTER
+</h1>
+
+
+<form method="POST">
+
+
+<input 
+type="number"
+step="any"
+name="value"
+placeholder="Enter value"
+required>
+
+
+<br>
+
+
+<select name="conversion">
+
+
+<option value="km_miles">
+KM to Miles
+</option>
+
+
+<option value="miles_km">
+Miles to KM
+</option>
+
+
+<option value="c_f">
+Celsius to Fahrenheit
+</option>
+
+
+<option value="f_c">
+Fahrenheit to Celsius
+</option>
+
+
+</select>
+
+
+<br>
+
+
+<button type="submit">
+Convert
+</button>
+
+
+</form>
+
+
+
+{% if result != None %}
+
+<h2>
+Result: {{ result }}
+</h2>
+
+{% endif %}
+
+
+
+<a href="/">
+<button type="button">
+Back to Home
+</button>
+</a>
+
+
+</body>
+
+</html>

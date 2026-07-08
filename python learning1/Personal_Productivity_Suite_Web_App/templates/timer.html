@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>
+Timer
+</title>
+
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+
+<body>
+
+
+<h1>
+TIMER & STOPWATCH
+</h1>
+
+
+<h2 id="display">
+00:00
+</h2>
+
+
+<input 
+type="number"
+id="seconds"
+placeholder="Enter seconds">
+
+
+<br><br>
+
+
+<button onclick="startTimer()">
+Start Timer
+</button>
+
+
+<button onclick="startStopwatch()">
+Start Stopwatch
+</button>
+
+
+<br><br>
+
+
+<a href="/">
+Back to Home
+</a>
+
+
+
+<script>
+
+let timer;
+
+
+function startTimer(){
+
+let seconds =
+document.getElementById("seconds").value;
+
+
+let time = seconds;
+
+
+timer = setInterval(function(){
+
+
+let minutes =
+Math.floor(time / 60);
+
+
+let secs =
+time % 60;
+
+
+document.getElementById("display").innerHTML =
+minutes + ":" + secs;
+
+
+time--;
+
+
+if(time < 0){
+
+clearInterval(timer);
+
+alert("Time's up!");
+
+}
+
+
+},1000);
+
+
+}
+
+
+
+function startStopwatch(){
+
+let start =
+Date.now();
+
+
+setInterval(function(){
+
+
+let seconds =
+Math.floor(
+(Date.now()-start)/1000
+);
+
+
+document.getElementById("display").innerHTML =
+"Time: " + seconds;
+
+
+},1000);
+
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>

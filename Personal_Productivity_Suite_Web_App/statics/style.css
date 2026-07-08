@@ -1,0 +1,241 @@
+/* Main Page */
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f4f7fb;
+
+    margin: 0;
+
+    padding: 20px;
+
+    color: #333;
+
+}
+
+
+/* Main Heading */
+
+h1 {
+
+    text-align: center;
+
+    color: #2c3e50;
+
+    font-size: 40px;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* Section Titles */
+
+h2 {
+
+    color: #34495e;
+
+    margin-top: 25px;
+
+}
+
+
+/* Buttons */
+
+button {
+
+    background: #3498db;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    margin: 5px;
+
+}
+
+
+button:hover {
+
+    background: #2980b9;
+
+    transform: scale(1.05);
+
+}
+
+
+
+/* Links */
+
+a {
+
+    text-decoration: none;
+
+}
+
+
+
+/* Forms */
+
+form {
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    margin-top: 20px;
+
+    max-width: 600px;
+
+}
+
+
+
+input,
+textarea,
+select {
+
+    width: 90%;
+
+    padding: 12px;
+
+    margin: 10px;
+
+    border-radius: 8px;
+
+    border: 1px solid #ccc;
+
+    font-size: 15px;
+
+}
+
+
+textarea {
+
+    height: 120px;
+
+}
+
+
+
+/* Notes */
+
+.note {
+
+    background: white;
+
+    padding: 20px;
+
+    margin: 15px 0;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+}
+
+
+.note h3 {
+
+    color: #2980b9;
+
+}
+
+
+.note p {
+
+    font-size: 17px;
+
+}
+
+
+
+/* Horizontal line */
+
+hr {
+
+    border: none;
+
+    height: 1px;
+
+    background: #ddd;
+
+    margin: 25px 0;
+
+}
+
+
+
+/* Dashboard Cards */
+
+.card-container {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+}
+
+
+.card {
+
+    background: white;
+
+    padding: 20px;
+
+    width: 220px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+
+.card:hover {
+
+    transform: translateY(-5px);
+
+}
+
+.header {
+
+    text-align:center;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    margin-bottom:30px;
+
+}
+
+
+.header p {
+
+    font-size:18px;
+
+    color:#555;
+
+}

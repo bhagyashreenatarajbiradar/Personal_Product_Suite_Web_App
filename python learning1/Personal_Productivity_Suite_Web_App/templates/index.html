@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>
+Personal Productivity Suite
+</title>
+
+<link rel="stylesheet" href="C:\Users\birad\Desktop\python learning1\Personal_Productivity_Suite_Web_App\statics\style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="header">
+
+<h1>
+ PERSONAL PRODUCTIVITY SUITE
+</h1>
+
+<p>
+Manage your tasks, notes and daily utilities in one place
+</p>
+
+</div>
+
+
+
+<div class="card-container">
+
+
+<div class="card">
+
+<h2>🧮 Calculator</h2>
+
+<p>Perform calculations easily</p>
+
+<a href="C:\Users\birad\Desktop\python learning1\Personal_Productivity_Suite_Web_App\templates\calculator.html">
+
+<button>
+Open
+</button>
+
+</a>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>⏱ Timer</h2>
+
+<p>Timer and stopwatch tool</p>
+
+<a href="C:\Users\birad\Desktop\python learning1\Personal_Productivity_Suite_Web_App\templates\timer.html">
+
+<button>
+Open
+</button>
+
+</a>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>📏 Unit Converter</h2>
+
+<p>Convert different units</p>
+
+<a href="C:\Users\birad\Desktop\python learning1\Personal_Productivity_Suite_Web_App\templates\unit_converter.html">
+
+<button>
+Open
+</button>
+
+</a>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>📁 File Organizer</h2>
+
+<p>Organize your files automatically</p>
+
+<a href="C:\Users\birad\Desktop\python learning1\Personal_Productivity_Suite_Web_App\templates\file_organizer.html">
+
+<button>
+Open
+</button>
+
+</a>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>💾 Backup</h2>
+
+<p>Create notes backup</p>
+
+<a href="/backup">
+
+<button>
+Backup
+</button>
+
+</a>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>📄 PDF Export</h2>
+
+<p>Download notes as PDF</p>
+
+<a href="/export_pdf">
+
+<button>
+Export
+</button>
+
+</a>
+
+</div>
+
+
+</div>
+
+
+<hr>
+
+
+<h2>
+➕ Add New Note
+</h2>
+
+
+<form action="/add" method="POST">
+
+
+<input
+type="text"
+name="title"
+placeholder="Enter note title"
+required>
+
+
+<textarea
+name="content"
+placeholder="Enter note content"
+required>
+</textarea>
+
+
+<button type="submit">
+
+Save Note
+
+</button>
+
+
+</form>
+
+
+
+<hr>
+
+
+
+<h2>
+📝 All Notes
+</h2>
+
+
+
+{% for note in notes %}
+
+
+<div class="note">
+
+
+<h3>
+{{ note.title }}
+</h3>
+
+
+<p>
+{{ note.content }}
+</p>
+
+
+<small>
+📅 {{ note.date }}
+</small>
+
+
+<br><br>
+
+
+<a href="/edit/{{ note.id }}">
+
+<button>
+✏ Edit
+</button>
+
+</a>
+
+
+
+<a href="/delete/{{ note.id }}">
+
+<button
+onclick="return confirm('Delete this note?');">
+
+🗑 Delete
+
+</button>
+
+</a>
+
+
+</div>
+
+
+{% endfor %}
+
+
+
+</body>
+
+</html>
